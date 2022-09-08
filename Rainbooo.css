@@ -1,0 +1,727 @@
+/* Modification of windows buttons */
+    .winButton-3UMjdg:nth-child(2) {
+        color: rgb(255, 0, 0);
+        background-color:rgb(45, 53, 53)!important;
+        
+        height: 21px!important;
+        width: 15px;
+        margin-top: -5px;
+        margin-right: 0px;
+        margin-left: 2px;
+    }
+    .winButton-3UMjdg:nth-child(2):hover {
+        color: rgb(255, 255, 255)!important;
+        background-color:rgb(255, 0, 0,0.2)!important;
+    }
+    .winButtonMinMax-3RsPUg:nth-child(3) {
+        color:rgb(141, 92, 0);
+        background-color:rgb(45, 53, 53);
+        height: 21px!important;
+        width: 15px;
+        margin-top: -5px;
+        margin-right: 0px;
+        margin-left: 2px;
+    }
+    .winButtonMinMax-3RsPUg:nth-child(3):hover {
+        color: rgb(255, 255, 255)!important;
+        background-color:rgb(141, 92, 0,0.2)!important;
+    }
+
+    .winButtonMinMax-3RsPUg:nth-child(4) {
+        color:rgb(47, 124, 47);
+        background-color:rgb(45, 53, 53);
+        height: 21px!important;
+        width: 15px;
+        margin-top: -5px;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .winButtonMinMax-3RsPUg:nth-child(4):hover {
+        color: rgb(255, 255, 255)!important;
+        background-color:rgb(47, 124, 47,0.3)!important;
+    }
+
+    .winButton-3UMjdg {
+        width: 50px!important;
+        top: 2px!important;
+        transition: all 200ms ease-out!important;
+    }
+
+    /*Divider new message*/
+    .divider-IqmEqJ,.divider-2rZFJK{
+        border-top-width: 1px;
+        border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+        animation: 10s rotate linear infinite;
+    }
+    @keyframes rotate {100% {--angle: 360deg;}}
+    @property --angle {syntax: '<angle>';initial-value: 0deg;inherits: false;}
+
+/*color of line replied*/
+    .repliedMessage-3Z6XBG:before{
+
+        border-top-width: 3px;
+        border-left-width: 3px;
+        border-image-width: 20px;
+        --angle: 0deg;
+        border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+        animation: 10s rotate linear infinite;
+    }
+    @keyframes rotate {100% {--angle: 360deg;}}
+    @property --angle {syntax: '<angle>';initial-value: 0deg;inherits: false;}
+
+/*Rainbow wave mention*/
+    html .mention.wrapper-1ZcZW-.mention.interactive{
+        background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        /*filter: drop-shadow(0 0 5px rgb(255, 238, 0));*/
+        color: rgba(255, 255, 255, 0.322) !important;
+        -webkit-background-clip: text;
+        position: relative;
+        z-index: 1;
+    }
+
+/*multicolor mention*/
+    .mention-3XBnnZ {     
+        background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        color: white !important;
+        outline: black !important;
+        z-index: 1;
+    }
+
+    .bar-wDIGjg {
+    background-color: var(--background-accent);
+    justify-content: center;
+    filter: drop-shadow(0px 1px 3px rgba(0,0,0,0.4));
+    overflow: hidden;
+    }
+    .container-24rGVp > div {
+    width: 93.333%;
+    }
+    .bar-wDIGjg > * {
+    color: var(--header-primary) !important;
+    z-index: 0;
+    }
+    .bar-wDIGjg .text-xs-medium-2LRpEj  {
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    }
+    .unreadIcon-3dqgX9 {
+    display: none;
+    }
+    .mentionsDot-lLfrj1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    margin-right: 0;
+    }
+    .mentionsDot-lLfrj1 + .text-xs-medium-2LRpEj::after {
+    font-size: 12px;
+    content: "NEW MENTIONS";
+    }
+    .mentionsDot-lLfrj1 + .text-xs-medium-2LRpEj {
+    font-size: 0px;
+    margin-bottom: -4px;
+    }
+
+/* Channel name */
+    .title-17SveM{
+            background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        color: transparent !important;
+        -webkit-background-clip: text;
+        position: relative;
+        z-index: 1;
+    }
+
+/*remove stage discovery*/
+    .channel-1Shao0[href="/discovery"] {
+        display: none;
+    }
+
+/*avatar only memberlist until hover*/
+    .chatContent-3KubbW { /*Chat pannel and message box*/
+        margin-right: 60px;
+    }
+    .membersWrap-3NUR2t {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        transform: translateX(80%);
+        justify-content: unset;
+        transition: transform 0.25s ease-in;
+    }
+    .member-2gU6Ar { /*Moves server members for aesthetic purposes*/
+        margin-left: 2px;
+        margin-bottom: 3px;
+    }
+
+/*Shows the server members list*/
+    .membersWrap-3NUR2t:hover {
+        transform: translateX(0%);
+    }
+
+/*server members list role color*/
+
+    .layout-1qmrhw {
+
+    transition: 0.2s ease;
+    }
+
+    .layout-1qmrhw:hover {
+    margin-left: 4px;
+
+    }
+
+    .username-u-ebrn::after {
+    content:'';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: calc(100% - 2px);
+    background: linear-gradient(to left, currentcolor, #0000);
+    border-radius: 2px;
+    opacity: 0.4;
+    z-index: -2;
+    }
+
+/*Multicolor username (self)*/
+    /*                         Thomas user id :1016334785142079488*/
+    .message-2CShn3>.contents-2MsGLg>img[src*="142976263907180544"]+h2 .username-h_Y3Us,
+    .subtext-2HDqJ7,
+    .title-338goq {
+        background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        color: transparent !important;
+        -webkit-background-clip: text;
+        z-index: 1;
+        
+    }
+    @keyframes gradient-border {
+    to {
+    background-position: 400%;
+    }
+    }
+
+/* mentioned message background */
+    .mentioned-Tre-dv{
+    transition: .5s ease;
+    background-color: #0000005d;
+    }
+
+/* mentioned message background on hover */
+    .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover{
+    background-color: #000000;
+    }
+
+/* mentioned message left border hover */
+    .mentioned-Tre-dv:before{
+        transition: .5s ease;
+        background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        color: transparent !important;
+        z-index: 1;
+    }
+
+/* mentioned message left border */
+    .mentioned-Tre-dv:hover:before{
+        background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        color: transparent !important;
+        z-index: 1;
+    }
+
+/* memberlist */
+    .membersWrap-3NUR2t :where(.members-3WRCEx, .content-2a4AW9){
+    background-color: rgba(32, 32, 32, 0.459) !important;
+    }
+
+/* remove nitro shit */
+    .privateChannels-oVe7HL [href="/store"] + svg,
+    .item-3XjbnG [class*="Promo"],
+    .premiumLabel-3HPvdB svg,
+    .premiumLabel-3HPvdB .badgeIconSettingsMenu-39c26C {
+        display: none;
+    }
+
+    .premiumLabel-3HPvdB {
+        color: var(--color-muted);
+    }
+
+    [class*="roleIcon"] {
+        float: left;
+        margin-left: 0rem;
+        margin-right: .25rem;
+    }
+    .premiumTrialBadge-pEqntF {
+        display: none;
+    }
+
+    /* fix non-squared emoji*/
+    img.emote {
+        text-indent: 0;
+        white-space: nowrap;
+        width: auto;
+        position: relative;
+        top: 0.25ex;
+    }
+
+    /* Pop-out Animation */ 
+    .menu-1QACrS,.userPopout-2j1gM4{
+        animation: custom-menu-animation 250ms ease;
+        transform-origin: top;
+    }
+    @keyframes custom-menu-animation {
+        0% {
+            transform: scaleY(0);
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+
+    /* Emoji Auto-Fill Animation */
+    .base-2v-uc0 {
+        transition: all 0.5s;
+    }
+    .base-2v-uc0:hover {
+        transition: all 0s;
+        transform: scale(1.02);
+    }
+
+    /* Rounded Context Menu */
+    .menu-1QACrS, .colorDefault-CDqZdO { 
+        border-radius: 15px; 
+    }
+
+
+    /* Channel Names Capitalized */
+    .channelName-3KPsGw {
+    text-transform: capitalize;
+    }
+
+
+    /* Username Background */
+
+    .headerText-2z4IhQ > span::before {
+    content: ''; 
+    width: calc(100% + 7px); 
+    height: 100%;
+    border-radius: 5px;
+    background-color: currentColor; 
+    opacity: 0.13; 
+    position: absolute; 
+    margin-top: 0px; 
+    z-index: -1;
+    margin-left: -3px;
+    }
+    .headerText-2z4IhQ > span {
+    margin-left: 3px;
+    }
+
+    .messageAttachmentNoJustify-lIzP9c {
+        justify-self: start !important;
+    }
+    /* Role background */
+    .role-2TIOKu {
+        transform: translate(0);
+        overflow: hidden;
+
+        --transparency: .4;
+        border-radius: 5px;
+    }
+    .role-2TIOKu .roleRemoveIcon-387wKV {
+        margin: 0;
+        left: unset;
+        transform: translate(50%,-50%);
+    }
+    .role-2TIOKu .roleRemoveButton-17oXnT {
+        position: static;
+    }
+    .role-2TIOKu .roleCircle-3K9O3d:before {
+        content: '';
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: inherit;
+        opacity: var(--transparency);
+    }
+
+    .roleCircle-3K9O3d {
+    background: linear-gradient(to top, var(--background-secondary-alt) ,transparent);
+        animation: gradient-border 5s rotate infinite;
+    }
+
+
+    /* remove help button */
+    .toolbar-3_r2xA .anchor-1MIwyf {
+        display: none;
+    }
+
+    /* Don't cover discord when offline*/
+    .container-2RRFHK {
+        background: transparent;
+        pointer-events: none;
+    }
+    .container-2RRFHK .anchor-1MIwyf { pointer-events: auto; }
+    .container-2RRFHK .content-3AIQZv .text-2bYgPB {
+        display:none;
+    }
+    .container-2RRFHK .ready-3BZNWT {
+        position: absolute;
+        bottom: 44px;
+        right: 244px;
+        z-index: 1;
+    }
+
+    .container-2RRFHK img, .container-2RRFHK video {
+        width: 32px;
+        height: 32px;
+    }
+    .container-2RRFHK .problems-CvGwpb {
+        padding: 8px 16px;
+        bottom: 18px;
+        left: unset;
+        right: 18px;
+        width:fit-content;
+        height:fit-content;
+        background-color: var(--background-floating);
+        border-radius: 8px;
+        -webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
+        box-shadow: var(--elevation-stroke), var(--elevation-medium);
+    }
+    /* add '🔇' for muted chan*/
+    .modeMuted-2T4MDZ .icon-2W8DHg path{ display: none; }
+    .modeMuted-2T4MDZ .iconContainer-21RCa3{ position: relative; }
+    .modeMuted-2T4MDZ .iconContainer-21RCa3:before{
+        content: '🔇';
+        position: absolute;
+        font-size: 20px; 
+    }
+
+    /* Colour The Channel Emblems */
+    /* var(--interactive-muted); For Default */
+    :root {
+    --hashtag-colour: var(--interactive-muted);
+    --announcement-colour: rgba(248, 194, 18, 0.75);
+    --rules-colour: rgba(255, 9, 0, 0.75);
+    --stages-colour: rgba(110, 248, 18, 0.75);
+    --voice-colour: rgba(23, 228, 255, 0.75);
+    --locked-colour: rgba(18, 221, 248, 0.75);
+    }
+    [d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z"], [d="M14 8C14 7.44772 13.5523 7 13 7H9.76001L10.3657 3.58738C10.4201 3.28107 10.1845 3 9.87344 3H8.88907C8.64664 3 8.43914 3.17391 8.39677 3.41262L7.76001 7H4.18011C3.93722 7 3.72946 7.17456 3.68759 7.41381L3.51259 8.41381C3.45905 8.71977 3.69449 9 4.00511 9H7.41001L6.35001 15H2.77011C2.52722 15 2.31946 15.1746 2.27759 15.4138L2.10259 16.4138C2.04905 16.7198 2.28449 17 2.59511 17H6.00001L5.39427 20.4126C5.3399 20.7189 5.57547 21 5.88657 21H6.87094C7.11337 21 7.32088 20.8261 7.36325 20.5874L8.00001 17H14L13.3943 20.4126C13.3399 20.7189 13.5755 21 13.8866 21H14.8709C15.1134 21 15.3209 20.8261 15.3632 20.5874L16 17H19.5799C19.8228 17 20.0306 16.8254 20.0724 16.5862L20.2474 15.5862C20.301 15.2802 20.0655 15 19.7549 15H16.35L16.6758 13.1558C16.7823 12.5529 16.3186 12 15.7063 12C15.2286 12 14.8199 12.3429 14.7368 12.8133L14.3504 15H8.35045L9.41045 9H13C13.5523 9 14 8.55228 14 8Z"]{
+    fill:var(--hashtag-colour);
+    }
+    [d="M33 34.5833V7.49998H35V36.6666H9C6.791 36.6666 5 34.801 5 32.5V7.49998C5 5.19894 6.791 3.33331 9 3.33331H31V30.4166H9C7.8955 30.4166 7 31.3485 7 32.5C7 33.6515 7.8955 34.5833 9 34.5833H33ZM23.9718 9.99998L15.8889 17.9915L12.7086 14.8441L10 17.5058L15.8885 23.3333L26.6667 12.6669L23.9718 9.99998Z"]{
+        fill:var(--rules-colour);
+    }
+    [d="M19.1 4V5.12659L4.85 8.26447V18.1176C4.85 18.5496 5.1464 18.9252 5.5701 19.0315L9.3701 19.9727C9.4461 19.9906 9.524 20 9.6 20C9.89545 20 10.1776 19.8635 10.36 19.6235L12.7065 16.5242L19.1 17.9304V19.0588H21V4H19.1ZM9.2181 17.9944L6.75 17.3826V15.2113L10.6706 16.0753L9.2181 17.9944Z"], [d="M3.9 8.26H2V15.2941H3.9V8.26Z"], [d="M22.545 4.87988V5.87988H23.28C23.4126 5.87988 23.52 5.98733 23.52 6.11988V10.6399C23.52 10.7724 23.4126 10.8799 23.28 10.8799H17.76C17.6275 10.8799 17.52 10.7724 17.52 10.6399V6.11988C17.52 5.98733 17.6275 5.87988 17.76 5.87988H18.52V4.87988C18.52 3.75988 19.47 2.87988 20.52 2.87988C21.57 2.87988 22.545 3.75988 22.545 4.87988ZM19.52 5.87988H21.52V4.87988C21.52 4.30845 21.0534 3.87988 20.52 3.87988C19.9867 3.87988 19.52 4.30845 19.52 4.87988V5.87988Z"], [d="M4.85 8.26429L15.84 5.84426V10.5599C15.84 11.6202 16.6996 12.4799 17.76 12.4799H21V19.0586H19.1V17.9302L12.7065 16.524L10.36 19.6233C10.1776 19.8633 9.89545 19.9998 9.6 19.9998C9.524 19.9998 9.4461 19.9904 9.3701 19.9725L5.5701 19.0313C5.1464 18.925 4.85 18.5495 4.85 18.1175V8.26429ZM9.2181 17.9942L6.75 17.3824V15.2111L10.6706 16.0751L9.2181 17.9942Z"], [d="M3.9 8.25981H2V15.2939H3.9V8.25981Z"] {
+    fill:var(--announcement-colour);
+    }
+    [d="M12 2C5.93 2 1 6.93 1 13C1 15 1.55 16.88 2.48 18.49L3.77 17.74C2.97 16.35 2.5 14.73 2.5 13C2.5 7.75 6.75 3.5 12 3.5C17.25 3.5 21.5 7.75 21.5 13H23C23 6.93 18.07 2 12 2ZM5.5 13C5.5 9.42 8.42 6.5 12 6.5C15.58 6.5 18.5 9.42 18.5 13H17C17 10.24 14.76 8 12 8C9.24 8 7 10.24 7 13C7 13.91 7.26 14.75 7.69 15.49L6.38 16.25C5.82 15.29 5.5 14.18 5.5 13ZM12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15ZM12 16.5C9.94 16.5 8.5 17.8 8.5 19.5V20H13V16.62C12.69 16.55 12.36 16.5 12 16.5ZM17 15H22C23.1 15 24 15.9 24 17V22C24 23.1 23.1 24 22 24H17C15.9 24 15 23.1 15 22V17C15 15.9 15.9 15 17 15ZM17 22H22V21H17V22ZM17 20H22V19H17V20ZM17 18H22V17H17V18Z"], [d="M15 2.41495C14.0462 2.14467 13.0398 2 12 2C5.93 2 1 6.93 1 13C1 15 1.55 16.88 2.48 18.49L3.77 17.74C2.97 16.35 2.5 14.73 2.5 13C2.5 7.75 6.75 3.5 12 3.5C13.0485 3.5 14.0571 3.66952 15 3.98267V2.41495Z"], [d="M21.0173 10C21.3305 10.9429 21.5 11.9515 21.5 13C21.5 14.73 21.03 16.35 20.22 17.75L21.51 18.5C22.45 16.88 23 15 23 13C23 11.9602 22.8553 10.9538 22.585 10H21.0173Z"], [d="M14 13C14 14.1 13.1 15 12 15C10.9 15 10 14.1 10 13C10 11.9 10.9 11 12 11C13.1 11 14 11.9 14 13Z"], [d="M8.5 19.5V20H15.5V19.5C15.5 17.8 14.06 16.5 12 16.5C9.94 16.5 8.5 17.8 8.5 19.5Z"], [d="M7 13C7 10.24 9.24 8 12 8C14.76 8 17 10.24 17 13C17 13.91 16.74 14.75 16.31 15.49L17.62 16.25C18.17 15.29 18.5 14.19 18.5 13C18.5 9.42 15.58 6.5 12 6.5C8.42 6.5 5.5 9.42 5.5 13C5.5 14.18 5.82 15.29 6.38 16.25L7.69 15.49C7.26 14.75 7 13.91 7 13Z"]{
+    fill:var(--stages-colour);
+    }
+    [d="M15 12C15 12.0007 15 12.0013 15 12.002C15 12.553 14.551 13.002 14 13.002V15.002C15.654 15.002 17 13.657 17 12.002C17 12.0013 17 12.0007 17 12H15ZM19 12C19 12.0007 19 12.0013 19 12.002C19 14.759 16.757 17.002 14 17.002V19.002C17.86 19.002 21 15.863 21 12.002C21 12.0013 21 12.0007 21 12H19ZM10.293 3.29604C10.579 3.01004 11.009 2.92504 11.383 3.07904C11.757 3.23204 12 3.59904 12 4.00204V20.002C12 20.407 11.757 20.772 11.383 20.927C11.009 21.082 10.579 20.996 10.293 20.71L6 16.002H3C2.45 16.002 2 15.552 2 15.002V9.00204C2 8.45304 2.45 8.00204 3 8.00204H6L10.293 3.29604Z"], [d="M11.383 3.07904C11.009 2.92504 10.579 3.01004 10.293 3.29604L6 8.00204H3C2.45 8.00204 2 8.45304 2 9.00204V15.002C2 15.552 2.45 16.002 3 16.002H6L10.293 20.71C10.579 20.996 11.009 21.082 11.383 20.927C11.757 20.772 12 20.407 12 20.002V4.00204C12 3.59904 11.757 3.23204 11.383 3.07904ZM14 5.00195V7.00195C16.757 7.00195 19 9.24595 19 12.002C19 14.759 16.757 17.002 14 17.002V19.002C17.86 19.002 21 15.863 21 12.002C21 8.14295 17.86 5.00195 14 5.00195ZM14 9.00195C15.654 9.00195 17 10.349 17 12.002C17 13.657 15.654 15.002 14 15.002V13.002C14.551 13.002 15 12.553 15 12.002C15 11.451 14.551 11.002 14 11.002V9.00195Z"]{
+    fill:var(--voice-colour);
+    }
+    [d="M17 11V7C17 4.243 14.756 2 12 2C9.242 2 7 4.243 7 7V11C5.897 11 5 11.896 5 13V20C5 21.103 5.897 22 7 22H17C18.103 22 19 21.103 19 20V13C19 11.896 18.103 11 17 11ZM12 18C11.172 18 10.5 17.328 10.5 16.5C10.5 15.672 11.172 15 12 15C12.828 15 13.5 15.672 13.5 16.5C13.5 17.328 12.828 18 12 18ZM15 11H9V7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V11Z"]{
+    fill:var(--locked-colour);
+    }
+
+    /* scanline for code bloc*/
+    /*.markup-eYLPri blockquote, .markup-eYLPri pre > code{
+
+        background-image: linear-gradient(
+            rgba(255,255,255, 0.05) 50%,
+            rgba(0,0,0, 0.1) 50%
+        );
+        background-size: 100% 4px;
+        z-index: 9999;
+        animation: flicker 0.2s infinite alternate;
+    }
+
+    @keyframes scanline {
+        0% { top: 100%; }
+    }
+
+
+    /* Messages Slide In Chat */
+    @keyframes slide-up {
+        0% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .message-2CShn3 {
+    animation: slide-up 0.1s ease;
+    }
+
+    /*remove attach files*/
+    .attachWrapper-3slhXI{  display:none;}
+    .numberBadge-37OJ3S {background-color: #4373c5 !important}
+
+    /* chat form*/
+    .input-2g-os5,
+    .scrollableContainer-15eg7h {
+        background-color: rgba(19, 19, 19, 0.576);
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+        border: 2px solid transparent;
+        outline: none;
+    }
+
+    .input-2g-os5:hover,
+    .scrollableContainer-15eg7h:hover {
+        border-color: #4373c5;
+        background-color: rgba(19, 19, 19, 0.672);
+    }
+
+    .input-2g-os5:focus-within,
+    .scrollableContainer-15eg7h:focus-within {
+        background-color: rgb(0, 0, 0);
+        --angle: 0deg;
+        border: 2px solid transparent;
+        border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+        animation: 5s rotate linear infinite;
+    }
+    @keyframes rotate {100% {--angle: 360deg;}}
+    @property --angle {syntax: '<angle>';initial-value: 0deg;inherits: false;}
+
+
+    .noBorder-2p63tM {
+        border: none !important;
+    }
+
+
+
+    /** Square ping icons */
+    .numberBadge-37OJ3S {
+        background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        color: white !important;
+        outline:black;
+        z-index: 1;
+        background-clip: padding-box;
+        border-radius: 3px;
+        line-height: 12px;
+        height: unset !important;
+        padding: 3px 4px !important;
+        min-width: 18px !important;
+        width: auto !important;
+    }
+
+    .activityPanel-9icbyU{
+        display:none;
+    }
+
+
+    /* WORK WITH SPOTIFY ADDON*/
+
+        /** Spotify Controls timeline */
+        .timeline-UWmgAx .barFill-Dhkah7 {
+            background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+            animation: gradient-border 100s linear infinite;
+            background-size: 400% 100%;
+            z-index: 1;
+        }
+
+        /** Timeline hover */
+        .timeline-UWmgAx:hover .barFill-Dhkah7 {
+            background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+            animation: gradient-border 100s linear infinite;
+            background-size: 400% 100%;
+            z-index: 1;
+        }
+    
+        .coverWrapper-YAplwJ {
+            position: absolute;
+            min-width: 240px;
+            min-height: 75px;
+            left:0;
+            margin-top: 125px;
+            margin-bottom: 100px;
+            opacity:0.1;
+            filter: blur(px)
+        }
+    
+    /*Colored old messages bar*/
+    .container-16j22k {
+    background-color: rgba(99, 63, 63, 0.8);
+    backdrop-filter: blur(5px);
+    }
+
+    .barBase-3xxDXu{
+        background-image: linear-gradient(to left,rgba(255, 0, 255, 0.3), rgb(255, 230, 0, 0.3),rgb(255,0,0, 0.3), rgb(234, 0, 255, 0.3), rgb(0, 140, 255, 0.3), rgb(51, 255, 0, 0.3),rgb(255, 230, 0, 0.3),rgb(255,0,255, 0.3));
+        animation: gradient-border 50s linear infinite;
+        background-size: 400% 100%;
+        z-index: 1;
+    }
+
+    /*Scrollbar color*/
+    #app-mount ::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 255, 255);
+    }
+    #app-mount ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(0, 132, 233);
+    }
+
+    /*Remove note shit from user detail*/
+    .note-Go5ZP2,
+    .bodyInnerWrapper-2bQs1k h3.uppercase-2unHJn:nth-of-type(2) {
+        display: none;
+    }
+
+    .note-3M15gE,
+    .userInfoSection-2u2hir h3.uppercase-2unHJn:first-of-type {
+        display: none;
+    }
+
+    /*Audio control multicolor*/
+    .audioControls-3fmemK{
+        background-image: linear-gradient(to left,rgba(255, 0, 255, 0.3), rgb(255, 230, 0, 0.3),rgb(255,0,0, 0.3), rgb(234, 0, 255, 0.3), rgb(0, 140, 255, 0.3), rgb(51, 255, 0, 0.3),rgb(255, 230, 0, 0.3),rgb(255,0,255, 0.3));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        z-index: 1;
+        border-radius: 100px;
+    }
+
+    /*selected chan*/
+    .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ{
+        background-image: linear-gradient(to left,rgba(255, 0, 255, 0.4), rgb(255, 230, 0, 0.4),rgb(255,0,0, 0.4), rgb(234, 0, 255, 0.4), rgb(0, 140, 255, 0.4), rgb(51, 255, 0, 0.4),rgb(255, 230, 0, 0.4),rgb(255,0,255, 0.4));
+        animation: gradient-border 100s linear infinite;
+        background-size: 400% 100%;
+        z-index: 1;
+        box-shadow:  -3px 0px 0px 0px rgba(255, 255, 255, 0.733);
+    }
+
+    /*Selection color*/
+    ::selection{
+        color:rgb(0, 0, 0);
+        background-color: rgb(26, 122, 167);
+    }
+
+    .containerDefault-3TQ5YN{
+        border-color:red!important;
+        border-width:4px!important;
+    }
+    /*EDITED IN RED*/
+    .edited-1v5nT8 {
+        color:red;
+        opacity: 90%
+    }
+
+    /*Mention activation reply*/
+    .mentionButton-3C5YMI{
+        background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+        animation: gradient-border 5s linear infinite;
+        background-size: 400% 100%;
+        color: rgba(255, 255, 255, 0.281) !important;
+        -webkit-background-clip: text;
+        position: relative;
+        z-index: 1;}
+
+/*Discord Watermark*/
+    .wordmarkWindows-2dq6rw svg {
+        display:none;
+    }
+    .wordmarkWindows-2dq6rw::after {
+        content: 'DISCORD !!!!'!important;
+        font-size: 13.10px;
+        font-weight: 700;
+        top:4px;
+        left: 3px;
+        background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+        color: transparent !important;
+        -webkit-background-clip: text;
+        position: relative;
+        z-index: 1;
+        }
+        @keyframes gradient-border {
+        to {
+        background-position: 400%;
+        }
+        }
+
+/*top button to the left*/
+    .container-ZMc96U .children-3xh0VB {
+        flex-grow: 0;
+    }
+
+    .toolbar-3_r2xA {
+        flex-grow: 1;
+    }
+
+    .search-39IXmY {
+        order: 1;
+        margin-left: auto;
+    }
+    .icon-1zidb7{
+        color:rgb(119, 136, 209);
+    }
+
+/*little searchbar*/
+    .searchBar-jGtisZ:hover,.open-6_Y_aH .searchBar-jGtisZ{
+        width:144px !important;
+        background-color: rgba(121, 121, 121, 0.37);
+    }
+    .searchBar-jGtisZ:focus-within{    
+        width:144px !important;
+        background-color: var(--background-tertiary);
+    }
+    .searchBar-jGtisZ{
+        width:30px !important;
+        background-color: transparent;
+        transition: .3s ease;
+    }
+    .searchBar-jGtisZ path{
+        fill: #fff;
+    }
+    .searchBar-jGtisZ:focus-within{    
+        width:144px !important;
+        background-color: rgb(0, 0, 0);
+        --angle: 0deg;
+        border: 2px solid transparent;
+        border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+        animation: 5s rotate linear infinite;
+    }
+    @keyframes rotate {100% {--angle: 360deg;}}
+    @property --angle {syntax: '<angle>';initial-value: 0deg;inherits: false;}
+
+/*Microphone and headset to top right (self member card*/
+
+    .container-ZMc96U.themed-Hp1KC_ {
+        background: var(--background-tertiary);
+        padding-right: 260px;
+        z-index: 0;
+    }
+
+    .panels-3wFtMD > .container-YkUktl {
+        right: 0;
+        top: 0;
+        position: absolute;
+        z-index: 101;
+        width: 240px;
+    }
+
+/* outline to folders */
+    .expandedFolderBackground-1kSAf6 {
+        box-shadow: 0 0 0 2px rgba(0, 132, 255, 0.617);
+        border-radius: 20px 20px 30px 30px;}
