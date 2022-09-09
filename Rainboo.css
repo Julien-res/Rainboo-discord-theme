@@ -289,22 +289,21 @@
 
     /* Username Background */
 
-    .headerText-2z4IhQ > span::before {
-    content: ''; 
-    width: calc(100% + 7px); 
-    height: 100%;
-    border-radius: 5px;
-    background-color: currentColor; 
-    opacity: 0.13; 
-    position: absolute; 
-    margin-top: 0px; 
-    z-index: -1;
-    margin-left: -3px;
+    .headerText-2z4IhQ > span:first-child:before {
+      content: ''; 
+      width: calc(100% + 7px); 
+      height: 100%;
+      border-radius: 5px;
+      background-color: currentColor; 
+      opacity: 0.3; 
+      position: absolute; 
+      margin-top: 0px; 
+      z-index: -1;
+      margin-left: -3px;
     }
     .headerText-2z4IhQ > span {
-    margin-left: 3px;
+      margin-left: 3px;
     }
-
     .messageAttachmentNoJustify-lIzP9c {
         justify-self: start !important;
     }
