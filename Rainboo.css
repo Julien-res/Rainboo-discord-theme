@@ -708,14 +708,14 @@
 /* Unread Server Message */
     .wrapper-1_HaEi [class^="listItem-"] .bd-unread .item-2LIpTv,
     .wrapper-1_HaEi [class^="listItem-"] .item-2LIpTv[style*="opacity: 1; height: 8px"] {
-        background: rgb(255, 255, 255);
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 204, 255));
         border-radius: 0px 25px 25px 0px;
     }
 
 /* Selected Server */
     .wrapper-1_HaEi [class^="listItem-"] .bd-selected .item-2LIpTv,
     .wrapper-1_HaEi [class^="listItem-"] .item-2LIpTv[style*="opacity: 1; height: 40px"] {
-        background: rgba(0, 0, 0, 0.555);
+        background-image: linear-gradient(to bottom, rgb(255, 230, 0), red);
         border-radius: 0px 25px 25px 0px;
     }
 
@@ -725,7 +725,7 @@
     }
     .wrapper-1_HaEi [class^="listItem-"] .bd-hovered .item-2LIpTv,
     .wrapper-1_HaEi [class^="listItem-"]:hover .item-2LIpTv {
-        background: rgb(57, 98, 180);
+        background-image: linear-gradient(to bottom, rgb(4, 95, 8), rgb(14, 221, 14));
         border-radius: 0px 25px 25px 0px;
         transition: 0ms;
     }
