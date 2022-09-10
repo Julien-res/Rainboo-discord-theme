@@ -48,7 +48,7 @@
         transition: all 200ms ease-out!important;
     }
 
-    /*Divider new message*/
+/*Divider new message*/
     .divider-IqmEqJ,.divider-2rZFJK{
         border-top-width: 1px;
         border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
@@ -139,11 +139,6 @@
         z-index: 1;
     }
 
-/*remove stage discovery*/
-    .channel-1Shao0[href="/discovery"] {
-        display: none;
-    }
-
 /*avatar only memberlist until hover*/
     .chatContent-3KubbW { /*Chat pannel and message box*/
         margin-right: 60px;
@@ -156,8 +151,9 @@
         transform: translateX(80%);
         justify-content: unset;
         transition: transform 0.25s ease-in;
+        backdrop-filter: blur(10px);
     }
-    .member-2gU6Ar { /*Moves server members for aesthetic purposes*/
+    .member-2gU6Ar {
         margin-left: 2px;
         margin-bottom: 3px;
     }
@@ -169,7 +165,6 @@
 
 
 /*Multicolor username (self)*/
-    /*                         Thomas user id :1016334785142079488*/
     .message-2CShn3>.contents-2MsGLg>img[src*="142976263907180544"]+h2 .username-h_Y3Us,
     .subtext-2HDqJ7,
     .title-338goq {
@@ -191,6 +186,10 @@
     .mentioned-Tre-dv{
     transition: .5s ease;
     background-color: #0000005d;
+    }
+/* memberlist */
+    .membersWrap-3NUR2t :where(.members-3WRCEx, .content-2a4AW9){
+    background-color: rgba(32, 32, 32, 0.459) !important;
     }
 
 /* mentioned message background on hover */
@@ -217,10 +216,6 @@
         z-index: 1;
     }
 
-/* memberlist */
-    .membersWrap-3NUR2t :where(.members-3WRCEx, .content-2a4AW9){
-    background-color: rgba(32, 32, 32, 0.459) !important;
-    }
 
 /* remove nitro shit */
     .privateChannels-oVe7HL [href="/store"] + svg,
@@ -243,7 +238,7 @@
         display: none;
     }
 
-    /* fix non-squared emoji*/
+/* fix non-squared emoji*/
     img.emote {
         text-indent: 0;
         white-space: nowrap;
@@ -252,7 +247,7 @@
         top: 0.25ex;
     }
 
-    /* Pop-out Animation */ 
+/* Pop-out Animation */ 
     .menu-1QACrS,.userPopout-2j1gM4{
         animation: custom-menu-animation 250ms ease;
         transform-origin: top;
@@ -281,13 +276,13 @@
     }
 
 
-    /* Channel Names Capitalized */
+/* Channel Names Capitalized */
     .channelName-3KPsGw {
     text-transform: capitalize;
     }
 
 
-    /* Username Background */
+/* Username Background */
 
     .headerText-2z4IhQ > span:first-child:before {
       content: ''; 
@@ -351,7 +346,7 @@
         -webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
         box-shadow: var(--elevation-stroke), var(--elevation-medium);
     }
-    /* add '🔇' for muted chan*/
+/* add '🔇' for muted chan*/
     .modeMuted-2T4MDZ .icon-2W8DHg path{ display: none; }
     .modeMuted-2T4MDZ .iconContainer-21RCa3{ position: relative; }
     .modeMuted-2T4MDZ .iconContainer-21RCa3:before{
@@ -360,7 +355,7 @@
         font-size: 20px; 
     }
 
-    /* Colour The Channel Emblems */
+/* Colour The Channel Emblems */
     /* var(--interactive-muted); For Default */
     :root {
     --hashtag-colour: var(--interactive-muted);
@@ -389,7 +384,7 @@
     fill:var(--locked-colour);
     }
 
-    /* scanline for code bloc*/
+/* scanline for code bloc*/
     /*.markup-eYLPri blockquote, .markup-eYLPri pre > code{
 
         background-image: linear-gradient(
@@ -406,7 +401,7 @@
     }
 
 
-    /* Messages Slide In Chat */
+/* Messages Slide In Chat */
     @keyframes slide-up {
         0% {
             opacity: 0;
@@ -421,11 +416,11 @@
     animation: slide-up 0.1s ease;
     }
 
-    /*remove attach files*/
+/*remove attach files*/
     .attachWrapper-3slhXI{  display:none;}
     .numberBadge-37OJ3S {background-color: #4373c5 !important}
 
-    /* chat form*/
+/* chat form*/
     .input-2g-os5,
     .scrollableContainer-15eg7h {
         background-color: rgba(19, 19, 19, 0.576);
@@ -458,7 +453,7 @@
 
 
 
-    /** Square ping icons */
+/** Square ping icons */
     .numberBadge-37OJ3S {
         background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
         animation: gradient-border 20s linear infinite;
@@ -509,7 +504,7 @@
             filter: blur(px)
         }
     
-    /*Colored old messages bar*/
+/*Colored old messages bar*/
     .container-16j22k {
     background-color: rgba(99, 63, 63, 0.8);
     backdrop-filter: blur(5px);
@@ -522,7 +517,7 @@
         z-index: 1;
     }
 
-    /*Scrollbar color*/
+/*Scrollbar color*/
     #app-mount ::-webkit-scrollbar-thumb {
         background-color: rgb(255, 255, 255);
     }
@@ -530,7 +525,7 @@
         background-color: rgb(0, 132, 233);
     }
 
-    /*Remove note shit from user detail*/
+/*Remove note shit from user detail*/
     .note-Go5ZP2,
     .bodyInnerWrapper-2bQs1k h3.uppercase-2unHJn:nth-of-type(2) {
         display: none;
@@ -541,7 +536,7 @@
         display: none;
     }
 
-    /*Audio control multicolor*/
+/*Audio control multicolor*/
     .audioControls-3fmemK{
         background-image: linear-gradient(to left,rgba(255, 0, 255, 0.3), rgb(255, 230, 0, 0.3),rgb(255,0,0, 0.3), rgb(234, 0, 255, 0.3), rgb(0, 140, 255, 0.3), rgb(51, 255, 0, 0.3),rgb(255, 230, 0, 0.3),rgb(255,0,255, 0.3));
         animation: gradient-border 20s linear infinite;
@@ -550,16 +545,15 @@
         border-radius: 100px;
     }
 
-    /*selected chan*/
+/*selected chan*/
     .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ{
         background-image: linear-gradient(to left,rgba(255, 0, 255, 0.4), rgb(255, 230, 0, 0.4),rgb(255,0,0, 0.4), rgb(234, 0, 255, 0.4), rgb(0, 140, 255, 0.4), rgb(51, 255, 0, 0.4),rgb(255, 230, 0, 0.4),rgb(255,0,255, 0.4));
         animation: gradient-border 100s linear infinite;
         background-size: 400% 100%;
-        z-index: 1;
         box-shadow:  -3px 0px 0px 0px rgba(255, 255, 255, 0.733);
     }
 
-    /*Selection color*/
+/*Selection color*/
     ::selection{
         color:rgb(0, 0, 0);
         background-color: rgb(26, 122, 167);
@@ -569,13 +563,13 @@
         border-color:red!important;
         border-width:4px!important;
     }
-    /*EDITED IN RED*/
+/*EDITED IN RED*/
     .edited-1v5nT8 {
         color:red;
         opacity: 90%
     }
 
-    /*Mention activation reply*/
+/*Mention activation reply*/
     .mentionButton-3C5YMI{
         background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
         animation: gradient-border 5s linear infinite;
@@ -583,7 +577,8 @@
         color: rgba(255, 255, 255, 0.281) !important;
         -webkit-background-clip: text;
         position: relative;
-        z-index: 1;}
+        z-index: 1;
+        }
 
 /*Discord Watermark*/
     .wordmarkWindows-2dq6rw svg {
@@ -666,7 +661,7 @@
         right: 0;
         top: 0;
         position: absolute;
-        z-index: 101;
+        z-index: 200;
         width: 240px;
     }
 
@@ -741,6 +736,7 @@
         background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
         animation: gradient-border 20s linear infinite;
         background-size: 400% 100%;
+        
     }
 
 /* Role background */
@@ -809,3 +805,119 @@
             transform: translateY(0px);
         }
     }
+
+/*Server name*/
+    .name-3Uvkvr{
+            background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+            animation: gradient-border 50s linear infinite;
+            background-size: 400% 100%;
+            color: transparent !important;
+            -webkit-background-clip: text;
+            position: relative;
+            z-index: 1;
+            font-weight: 800;
+            font-size: 20px;
+    }
+
+/*Change activity in right chat*/
+    .activityText-1rR-8O strong{
+            background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+            animation: gradient-border 30s linear infinite;
+            background-size: 400% 100%;
+            color: transparent !important;
+            -webkit-background-clip: text;
+            position: relative;
+            z-index: 1;
+            font-weight: 800;
+            font-size: 12px;
+    }
+.activityText-1rR-8O:not(.activityText-1rR-8O strong){
+    color:white;
+}
+/*Remove nitro bar in chan list*/
+    .container-2giAcK{
+      display: none;
+    }
+    .content-2a4AW9>div:first-child+div[style]{
+      display: none;
+    }
+
+    .textRuler-1DsANg{
+        display:none;
+}
+
+
+/*Translucent autocomplete*/
+#app-mount .autocomplete-3NRXG8 {
+    background: none;
+}
+
+.autocomplete-3NRXG8::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(32, 32, 32, 0.459) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+/*remove stage discovery*/
+    .channel-1Shao0[href="/discovery"] {
+        display: none;
+    }
+
+/* the new button */
+    .unreadPill-3nEWYM {
+    background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+        animation: gradient-border 30s linear infinite;
+        background-size: 400% 100%;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+        transform: translateY(-6px);
+}
+
+/* little arrow infront of it */
+.unreadPillCapStroke-1nE1Q8 {
+    color:transparent!important;
+    fill:transparent;
+
+}
+
+/*bigger avatar*/
+.avatar-2e8lTP {
+    transform:scale(1.2);
+    z-index: 0;
+}
+
+/*Channel separator*/
+.mainContent-uDGa6R{
+    border-image: conic-gradient(from var(--angle), rgb(255, 0, 0, 0.7), rgb(255, 255, 0, 0.7), rgb(0, 255, 0, 0.7), rgb(0, 255, 255, 0.7), rgba(0, 0, 255, 0.7), rgb(255, 0, 255, 0.7), rgb(255, 0, 0, 0.7)) 1;
+    animation: 50s rotate linear infinite;
+    border-bottom: 1px solid;
+    text-align: center;
+    margin-top:-15px;
+    color:white; /*Little arrow on left*/
+}
+.name-3BUDLf{
+    color:rgba(255, 255, 255, 0.822);
+    font-weight: 800;
+}
+/*multicolor button when hover*/
+.button-f2h6uQ:hover{
+    background-image: linear-gradient(to left,rgb(51, 255, 0, 0.5), rgb(255, 230, 0, 0.5), red, rgb(234, 0, 255, 0.5), rgb(0, 140, 255, 0.5), rgb(51, 255, 0, 0.5));
+    animation: gradient-border 30s linear infinite;
+    background-size: 400% 100%;
+}
+
+.circleIconButton-1VxDrg:hover{
+    background-image: linear-gradient(to left,rgb(51, 255, 0, 0.5), rgb(255, 230, 0, 0.5), red, rgb(234, 0, 255, 0.5), rgb(0, 140, 255, 0.5), rgb(51, 255, 0, 0.5));
+    animation: gradient-border 30s linear infinite;
+    background-size: 400% 100%;
+}
+/*discover button and new serv*/
+.circleIcon-3489FI{
+    color:rgb(255, 0, 242);
+}

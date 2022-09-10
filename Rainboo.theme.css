@@ -1,6 +1,6 @@
 /**
     * @name Rainboo
-    * @version 0.5
+    * @version 0.6
     * @description In dev. theme with night ambiance and touches of RGB
     * @author Prophix#8285
     * @updateurl https://github.com/Julien-res/Rainboo-discord-theme/blob/main/Rainboo.theme.css
@@ -26,7 +26,7 @@
     --background-floating: #18191c;
     --background-mobile-primary: #36393f;
     --background-mobile-secondary: #2f3136;
-    --background-modifier-hover: rgba(79, 84, 92, 0.16);
+    --background-modifier-hover: rgba(255, 255, 255, 0.16);
     --background-modifier-active: rgba(79, 84, 92, 0.24);
     --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
     --activity-card-background: #202225;
