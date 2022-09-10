@@ -1,6 +1,6 @@
 /**
     * @name Rainboo
-    * @version 0.6
+    * @version 0.7
     * @description In dev. theme with night ambiance and touches of RGB
     * @author Prophix#8285
     * @updateurl https://github.com/Julien-res/Rainboo-discord-theme/blob/main/Rainboo.theme.css
@@ -11,7 +11,7 @@
 
 @import url('https://nyri4.github.io/Discolored/main.css');
 @import url('https://julien-res.github.io/Rainboo-discord-theme/Rainboo.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
 
 :root {
     --channels-default: #adadb8;
@@ -32,4 +32,8 @@
     --activity-card-background: #202225;
     --textbox-markdown-syntax: #8e9297;
     --brand-experiment: var(--color-brand)
+}
+
+::-webkit-input-placeholder, body, button, input, select, textarea {
+    font-family: 'Yantramanav', sans-serif;
 }
