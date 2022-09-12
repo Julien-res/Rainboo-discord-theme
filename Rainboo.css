@@ -950,25 +950,31 @@
 
 /*Profil tab modif*/
 
-.activityName-3YXl6e{
-    background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
-    animation: gradient-border 1s linear infinite;
-    background-size: 400% 100%;
-    color: rgba(255, 255, 255, 0.226) !important;
-    -webkit-background-clip: text;
-}
-
-    @keyframes gradient-border {
-    to {
-    background-position: 400%;
-    }
+    .activityName-3YXl6e{
+        background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+        animation: gradient-border 1s linear infinite;
+        background-size: 400% 100%;
+        color: rgba(255, 255, 255, 0.226) !important;
+        -webkit-background-clip: text;
     }
 
-.eyebrow-Ejf06y{
-    background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
-    animation: gradient-border 5s linear infinite;
-    background-size: 400% 100%;
-    color: rgba(255, 255, 255, 0.226) !important;
-    -webkit-background-clip: text;
-    font-weight: 800px;
-}
+        @keyframes gradient-border {
+        to {
+        background-position: 400%;
+        }
+        }
+
+    .eyebrow-Ejf06y{
+        background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+        animation: gradient-border 5s linear infinite;
+        background-size: 400% 100%;
+        color: rgba(255, 255, 255, 0.226) !important;
+        -webkit-background-clip: text;
+        font-weight: 800px;
+    }
+
+/*Big emote*/
+    .emojiContainer-2XKwXX>.emoji.jumboable{
+      width: 4rem;
+      height: 4rem;
+    }
