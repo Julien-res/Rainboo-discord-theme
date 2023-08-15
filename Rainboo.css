@@ -187,15 +187,12 @@
     transition: .5s ease;
     background-color: #0000005d;
     }
-/* memberlist */
-    .membersWrap-3NUR2t :where(.members-3WRCEx, .content-2a4AW9){
-    background-color: rgba(32, 32, 32, 0.459) !important;
-    }
 
 /* mentioned message background on hover */
     .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover{
     background-color: #000000;
     }
+
 
 /* mentioned message left border hover */
     .mentioned-Tre-dv:before{
@@ -585,7 +582,7 @@
         display:none;
     }
     .wordmarkWindows-2dq6rw::after {
-        content: 'DISCORD !!!!'!important;
+        content: 'Discord'!important;
         font-size: 13.10px;
         font-weight: 700;
         top:4px;
@@ -663,6 +660,7 @@
         position: absolute;
         z-index: 200;
         width: 240px;
+        height: 45px;
     }
 
 /* outline to folders */
@@ -681,12 +679,15 @@
         padding: 10px 0px 0px 0px;
         letter-spacing: .01em;
         text-align: center;
-        color: #7F7F7F;
-        border-color: #7F7F7F;
         border-bottom: 1px solid currentcolor;
+        border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+        animation: 15s rotate linear infinite;
     }
-
-
+    /*
+        background-image: linear-gradient(to left,rgb(255,0,255), rgb(255, 230, 0),rgb(255,0,0), rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0),rgb(255, 230, 0),rgb(255,0,255));
+        animation: gradient-border 20s linear infinite;
+        background-size: 400% 100%;
+*/
 
 /* Server Message Notice */
     .wrapper-1_HaEi [class^="listItem-"] .wrapper-z5ab_q {
@@ -767,6 +768,7 @@
     }
 
 /*Hyperlink color*/
+/*
     .markup-eYLPri a {
         background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
         animation: gradient-border 50s linear infinite;
@@ -793,7 +795,7 @@
         color: transparent !important;
         -webkit-background-clip: text;
     }
-
+*/
 /* Settings/Deafen/Mute Buttons Animated */
     .button-12Fmur:hover .contents-3ca1mk {
         animation: UserModalButtons 0.5s normal ease infinite;
@@ -911,7 +913,7 @@
 /*Channel separator*/
     .mainContent-uDGa6R{
         border-image: conic-gradient(from var(--angle), rgb(255, 0, 0, 0.7), rgb(255, 255, 0, 0.7), rgb(0, 255, 0, 0.7), rgb(0, 255, 255, 0.7), rgba(0, 0, 255, 0.7), rgb(255, 0, 255, 0.7), rgb(255, 0, 0, 0.7)) 1;
-        animation: 3    0s rotate linear infinite;
+        animation:15s rotate linear infinite;
         border-bottom: 1px solid;
         text-align: center;
         margin-top:-15px;
@@ -978,3 +980,9 @@
       width: 4rem;
       height: 4rem;
     }
+
+/*Fixes the "GIF" text having a massive gap that takes up unnecessary space*/
+.altText-sAs-Ao {
+  margin: .25rem 0 -0.15rem;
+  line-height: 17px;
+}
