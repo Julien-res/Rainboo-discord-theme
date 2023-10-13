@@ -1,4 +1,4 @@
-/* Modification of windows buttons */
+    /* Modification of windows buttons */
     .winButton-3UMjdg:nth-child(2) {
         color: rgb(255, 0, 0);
         background-color:rgb(45, 53, 53)!important;
@@ -143,7 +143,7 @@
     .chatContent-3KubbW { /*Chat pannel and message box*/
         margin-right: 60px;
     }
-    .membersWrap-3NUR2t {
+    .container-2o3qEW {
         position: absolute;
         top: 0;
         right: 0;
@@ -153,13 +153,14 @@
         transition: transform 0.25s ease-in;
         backdrop-filter: blur(10px);
     }
+
     .member-2gU6Ar {
         margin-left: 2px;
         margin-bottom: 3px;
     }
 
 /*Shows the server members list*/
-    .membersWrap-3NUR2t:hover {
+    .container-2o3qEW:hover {
         transform: translateX(0%);
     }
 
